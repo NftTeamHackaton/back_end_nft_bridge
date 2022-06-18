@@ -7,5 +7,6 @@ class Nft(db.Model):
     picture = db.Column(db.String(255))
     description = db.Column(db.String(255))
     chain_id = db.Column(db.String(255))
+    nft_id = db.Column(db.Integer)
     nft_address = db.Column(db.String(255))
     user_address = db.Column(db.String(255))
