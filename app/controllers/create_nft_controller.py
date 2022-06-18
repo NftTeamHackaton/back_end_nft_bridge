@@ -26,9 +26,9 @@ class CreateNftController(Resource):
     @cross_origin()
     def put(self):
         data = request.get_json()
-        address = data['address']
+        address = data['nft_address']
         chain_id = data['chain_id']
         return self.__create_nft.edit_nft(address, chain_id)
 
 
-api.add_resource(CreateNftController, '/api/create/nft')
+api.add_resource(CreateNftController, '/api/nft/create')
