@@ -50,12 +50,12 @@ class TwitterTokenShareService:
                            ]
                        }, 404
             else:
-                amount += 10
+                amount += 7
             for retweet in retweets_list:
                 list1.append(retweet.user.screen_name)
             check_user = Transaction.query.filter_by(twitter_username=twitter_username, address=address).first()
             if str(twitter_user_id.screen_name) in list1 and check_user is None:
-                amount += 10
+                amount += 7
                 tx = Transaction()
                 tx.address = address
                 tx.twitter_username = twitter_username

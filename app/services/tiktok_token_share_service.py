@@ -47,7 +47,7 @@ class TiktokTokenShareService:
                     tx = Transaction()
                     tx.tiktok = video_url
                     tx.address = address
-                    tx.amount = 10
+                    tx.amount = 6
                     db.session.add(tx)
                     db.session.commit()
                     return {

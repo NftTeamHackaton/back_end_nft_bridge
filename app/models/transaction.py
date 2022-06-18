@@ -7,4 +7,5 @@ class Transaction(db.Model):
     twitter_username = db.Column(db.String(255), nullable=True)
     tiktok = db.Column(db.String(255), nullable=True)
     amount = db.Column(db.Integer)
+    ip_address = db.Column(db.String(255))
     send_status = db.Column(db.BOOLEAN, default=False)
