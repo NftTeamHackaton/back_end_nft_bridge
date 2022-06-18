@@ -1,0 +1,10 @@
+# env
+venv
+.env
+# logs
+# python
+*__pycache__
+*.pyc
+# db
+migrations
+
