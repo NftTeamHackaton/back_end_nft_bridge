@@ -5,6 +5,8 @@ venv
 # python
 *__pycache__
 *.pyc
+.flaskenv
+start.sh
 # db
 migrations
 .idea
