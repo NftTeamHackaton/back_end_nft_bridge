@@ -1,1 +1,1 @@
-from app.models import transaction
+from app.models import transaction, nftlist
