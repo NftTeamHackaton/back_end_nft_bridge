@@ -14,6 +14,7 @@ class UserNftService:
                 "picture": nft.picture,
                 "description": nft.description,
                 "chain_id": nft.chain_id,
+                "nft_id": nft.nft_id,
                 "nft_address": nft.nft_address,
                 "user_address": nft.user_address,
             })
