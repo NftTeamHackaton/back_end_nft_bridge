@@ -7,4 +7,5 @@ venv
 *.pyc
 # db
 migrations
+.idea
 
