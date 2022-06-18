@@ -12,6 +12,8 @@ class CreateNftService:
         nft.chain_id = chain_id
         nft.nft_address = address
         nft.user_address = user_address
+        db.session.add(nft)
+        db.session.commit()
 
     def edit_nft(self, address, chain_id):
         nft_view = Nft.query.filter_by(nft_address=address).first()
